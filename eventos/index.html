@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        body{ 
+            text-align: center;
+         }
+        div{
+            margin: auto;
+            margin-top: 50px;
+            background-color: purple;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body onload="alert('Terminou De Carregar')" onresize="console.log('alteracao da tela')">
+
+    <h1>Aprendendo Javascript</h1>
+    <h2>Eventos</h2>
+
+    <button onclick="eventoClick()">Action</button>
+    <button ondblclick="alterarCorFundo('red')">Red</button>
+    <button onclick="alterarCorFundo('green')">Green</button>
+    <button onclick="alterarCorFundo('blue')">Blue</button>
+    
+    <div class="caixa" 
+    onmouseover="corVermelho()"
+    onmouseout="corAzul()"
+    id="caixa"></div>
+    <br>
+    <select id="items">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+        <option value="4">Valor 4</option>
+        <option value="5">Valor 5</option>
+    </select>    
+    <br>
+    <br>
+
+    <input 
+    type="text"
+    id="campo"
+    style="padding: 80px; font-size: 40px;"
+    placeholder="digite algo"
+    onfocus="limparTela()"
+    onblur="limparTela()"
+    onkeydown="teclaPressionada()"
+    >
+    <script src="index.js"></script>
+</body>
+</html>
