@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+header{
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* border: 1px solid; */
+    width: 90%;
+}
+
+input{
+    height: 120px;
+    width: 80%;
+    font-size: 28px;
+    padding-left: 10%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+button{
+    width: 20%;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+.item{
+    padding: 0px;
+    margin: 10px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    height: 80px;
+    width: 100%;
+}
+
+.item-icone{
+    width: 10%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.desmarcado{
+    background-image: url("icons/unchecked.svg");
+}
+
+.marcado{
+    background-image: url("icons/checked.svg");
+}
+
+
+
+.item-nome{
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.item-button{
+    width: 10%;
+    background-color: red;
+
+    background-image: url("icons/delete.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
